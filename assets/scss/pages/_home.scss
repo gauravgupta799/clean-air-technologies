@@ -1,0 +1,339 @@
+@use "../abstract/breakpoints" as *;
+@use "../abstract/colors" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+
+$height: calc(100vh - 150px);
+
+.hero{
+    &__content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: $height;
+    }
+}
+
+.banner-container{
+    position: relative;
+    overflow: hidden;
+    @include bg-cover;
+    height: 76vh;
+    
+    .banner-title, 
+    .banner-subTitle{
+        color:$clr-white;
+    }
+    &--home{
+        height: 100vh;
+    }
+}
+
+.banner-content-home{
+    position: absolute;
+    left: 0;
+    bottom:rem(268);
+    @include breakpoint-md{
+        left: 2rem;
+    }
+}
+
+.banner-bottom-wrapper{
+    background-color: $clr-primary;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-block:em(20);
+    @include breakpoint-md{
+        padding-block:em(24);
+    }
+    @include breakpoint-lg{
+        padding-block:em(28);
+    }
+    @include breakpoint-xxl{
+        padding-block:em(32);
+    }
+
+    ul,li {
+        display: flex;
+        align-items: center;
+        gap:rem(12);
+        color:$clr-white;
+        font-size: rem(12);
+        line-height: 1.25;
+        @include breakpoint-md{
+            font-size: rem(14);
+        }
+        @include breakpoint-lg{
+            font-size: rem(16);
+        }
+    }
+    ul{
+        justify-content: space-between;
+    }
+
+}
+
+.swiper-navigation-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:10px;
+    button{
+        border:1px solid $clr-black;
+        width: 45px;
+        height: 45px;
+        @include radius(6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition(all, 0.3s, ease);
+        &:hover{
+            cursor: pointer;
+            border-color: $clr-secondary; 
+            background-color: $clr-secondary;
+            svg path{
+                fill:$clr-white;
+                stroke:$clr-white;
+            }
+        }
+    }
+}
+
+.swiper-button-lock{
+    display: flex !important;
+}
+
+.cards{
+    &__header{
+        figure{
+            position: relative;
+        }
+
+        .icon-btn{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @include breakpoint-xxl{
+                right: 16px;
+            }
+        }
+    }
+}
+
+.why{
+    &__card{
+        background-color: $clr-white;
+        border-radius:20px;
+        border:1px solid #959595;
+        padding: em(28) em(32) em(56);
+        @include breakpoint-md{
+            padding: em(32) em(48) em(56) em(40); 
+        }
+        @include breakpoint-lg{
+            padding: em(32) em(56) em(64) em(48); 
+        }
+        @include breakpoint-xxl{
+            padding: em(32) em(64) em(72) em(56); 
+        }
+        @include breakpoint-xxxl{
+            padding: em(32) em(64) em(72) em(64); 
+        }
+    }
+}
+
+.counter{
+    &__wrapper{
+        max-width: 22rem;
+        padding-left: 2em;
+        @include breakpoint-lg{
+            padding-left: 4em; 
+        }
+        @include breakpoint-xl{
+            padding-left: 6em; 
+        }
+        @include breakpoint-xxl{
+            padding-left: 8em; 
+        }
+    }
+    &__value{
+        font-size: rem(44);
+        line-height: 1;
+        font-family: $ff-primary;
+        color:$clr-white;
+        @include breakpoint-md{
+            font-size: rem(48);
+        }
+        @include breakpoint-lg{
+            font-size: rem(56);
+        }
+        @include breakpoint-xl{
+            font-size: rem(64);
+        }
+        @include breakpoint-xxl{
+            font-size: rem(72);
+        }
+        @include breakpoint-xxxl{
+            font-size: rem(80);
+        }
+    }
+    &__subTitle{
+        color:$clr-white;
+
+    }
+    // .counter-text{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap:rem(4);
+    //     font-size: rem(36);
+    //     line-height: 1.1;
+    //     font-family: $ff-primary;
+    //     @include breakpoint-lg{
+    //         font-size: rem(40);
+    //     }
+    // }
+}
+
+.testimonials{
+    &__card{
+        padding:em(32) em(20);
+        background-color:$clr-tertiary;
+        border:1px solid #2A2A2A;
+        border-radius:18px;
+        @include breakpoint-sm{
+            padding:em(36) em(24);
+        }
+        @include breakpoint-lg{
+            padding:em(44) em(32);
+        }
+        @include breakpoint-xl{
+            padding:em(48) em(36);
+        }
+        @include breakpoint-xxl{
+            padding:em(52) em(40);
+        }
+    }
+
+    &__card-header{
+        display: flex;
+        align-items: center;
+        gap:rem(24);
+    }
+
+    &__name{
+        font-size: rem(20);
+        line-height: 1.35;
+        font-family: $ff-primary;
+        @include breakpoint-lg{
+            font-size: rem(22);
+        }
+        @include breakpoint-xxl{
+            font-size: rem(24);
+        }
+
+    }
+
+    // &__card-content{
+    //     line-height: 1.25;
+    //     font-family: $ff-primary;
+    //     text-align: center;
+    //     font-size: rem(18);
+    //     @include breakpoint-md{
+    //         font-size: rem(20);
+    //     }
+    //     @include breakpoint-xl{
+    //         font-size: rem(22);
+    //     }
+    // }
+    // &__footer{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap:rem(16);
+    // }
+}
+
+.blogs{
+    &__body{
+        max-width: 25rem;
+        h5{
+            a{
+                color:$clr-black;
+                @include transition(color, 0.3s, ease);
+                &:hover{
+                    color:$clr-secondary;
+                }
+            }
+        }
+    }
+}
+
+.marquee{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-block:em(16);
+    background-color: $clr-primary;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:8rem;
+        // width: fit-content;
+        animation: scroll-left 20s linear infinite;
+        will-change: transform;
+        backface-visibility: hidden;
+        @include breakpoint-sm{
+            gap:10rem;
+        }
+        @include breakpoint-md{
+            gap:12rem;
+        }
+        @include breakpoint-lg{
+            gap:14rem;
+        }
+        @include breakpoint-xl{
+            gap:16rem;
+        }
+        @include breakpoint-xxl{
+            gap:18rem;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:2rem;
+        @include breakpoint-sm{
+            gap:3rem; 
+        }
+        @include breakpoint-lg{
+            gap:4rem; 
+        }
+        @include breakpoint-xxl{
+            gap:5rem; 
+        }
+        figure{
+            flex-shrink: 0;
+        }
+    }
+    &__text{
+        color:$clr-white;
+        font-size: rem(22);
+        line-height: 1.5;
+        font-family: $ff-primary;
+        white-space: nowrap;
+        @include breakpoint-lg{
+            font-size: rem(24);
+        }
+    }
+}
+
+
+@keyframes scroll-left {
+    0%   { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }

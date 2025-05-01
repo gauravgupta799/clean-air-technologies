@@ -1,0 +1,80 @@
+@use '../abstract/functions' as *;
+@use '../abstract/colors' as *;
+@use '../abstract/fonts' as *;
+@use '../abstract/mixins' as *;
+@use '../abstract/breakpoints' as *;
+
+
+// ============= faq or accordion ===================
+.accordion {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.accordion-title{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap:rem(12);
+    padding-block:em(20);
+    text-transform: initial;
+    color:$clr-white;
+    @include transition(all, 0.3s, ease);
+    span{
+        max-width: 35rem;
+        display: inline-block;
+        @include breakpoint-xl{
+            max-width: 40rem;
+        }
+        @include breakpoint-xxl{
+            max-width: 45rem;
+        }
+    } 
+
+    svg{
+        transition: transform 0.3s ease;
+        path{
+            @include transition(fill, 0.3s, ease);
+        }
+    }
+   
+    &:hover {
+        color: $clr-secondary;
+        cursor: pointer;
+        svg path{
+            fill:$clr-secondary;
+        }
+    }
+}
+
+
+.accordion-content {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    p{
+        color:$clr-white;
+        padding-bottom:em(28);
+    }
+
+    p + p{
+        // padding-top:em(24);
+        margin-top: 0;
+    }
+}
+
+.accordion-title.is-open{
+    color:$clr-secondary;
+    svg{
+        transform: rotate(-180deg);
+        path{
+            fill:$clr-secondary;
+        }
+    }
+    &.accordion-content{
+        padding-bottom: rem(20);
+    }
+}

@@ -1,0 +1,97 @@
+// ?#iefix => Ensure better performance and faster rendering
+// ?font-display: swap: It’s a modern best practice — it prevents invisible text while fonts load.
+// font-display: swap; // For better performance and faster rendering 
+// It's a good practice to order font formats by file size and efficiency — from most modern and optimized to older and larger formats. This way, browsers pick the smallest, fastest-loading file they support first. Here’s the optimal order:
+// 1. WOFF2:- Smallest and most effiecient, supported by modern browsers (modern, compressed, and efficient)
+// 2. WOFF:- Still compressed and widely supported  (compressed, but less efficient than WOFF2)
+// 3. TTF(TrueType): Larger, Older Format, but still common.
+// 4. EOT(Embedded OpenType):- For older versions of browser (Internet Explorer), larger, and less supported.
+// 5. SVG: Rarely needed anymore - only for very old IOS versions.
+
+
+// ============= CompassSerif Regular ===========
+@font-face{
+    font-family:"CompassSerif-Regular";
+    src:url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.woff2") format("woff2"),
+        url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.woff") format("woff"),
+        url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.ttf") format("truetype"),
+        url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.svg#CompassSerif-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;  
+    font-display: swap; 
+}
+
+
+// ============= Manrope Regular ===========
+@font-face{
+    font-family:"Manrope-Regular";
+    src:url("../../../assets/fonts/Manrope/Manrope-Regular.woff2") format("woff2"),
+        url("../../../assets/fonts/Manrope/Manrope-Medium.woff") format("woff"),
+        url("../../../assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype"),
+        url("../../../assets/fonts/Manrope/Manrope-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/Manrope/Manrope-Regular.svg#Manrope-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;  
+    font-display: swap; 
+}
+
+// ============= Manrope Medium ===========
+@font-face{
+    font-family:"Manrope-Medium";
+    src:url("../../../assets/fonts/Manrope/Manrope-Medium.woff2") format("woff2"),
+        url("../../../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"),
+        url("../../../assets/fonts/Manrope/Manrope-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/Manrope/Manrope-Medium.ttf") format("truetype"),
+        url("../../../assets/fonts/Manrope/Manrope-Medium.svg#Manrope-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;  
+    font-display: swap;
+}
+
+// ============= Manrope SemiBold ===========
+@font-face{
+    font-family:"Manrope-SemiBold";
+    src:url("../../../assets/fonts/Manrope/Manrope-SemiBold.woff2") format("woff2"),
+        url("../../../assets/fonts/Manrope/Manrope-SemiBold.woff") format("woff"),
+        url("../../../assets/fonts/Manrope/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/Manrope/Manrope-SemiBold.ttf") format("truetype"),
+        url("../../../assets/fonts/Manrope/Manrope-SemiBold.svg#Manrope-SemiBold") format("svg");
+    font-weight: 700;
+    font-style: normal;  
+    font-display: swap;
+}
+
+// ============= Manrope Bold ===========
+@font-face{
+    font-family:"Manrope-Bold";
+    src:url("../../../assets/fonts/Manrope/Manrope-Bold.woff2") format("woff2"),
+        url("../../../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"),
+        url("../../../assets/fonts/Manrope/Manrope-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/Manrope/Manrope-Bold.ttf") format("truetype"),
+        url("../../../assets/fonts/Manrope/Manrope-Bold.svg#Manrope-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;  
+    font-display: swap;
+}
+
+
+// ============= Manrope Bold ===========
+@font-face{
+    font-family:"DMSans-Regular";
+    src:url("../../../assets/fonts/DMSans/DMSans-Medium.woff2") format("woff2"),
+        url("../../../assets/fonts/DMSans/DMSans-Medium.woff") format("woff"),
+        url("../../../assets/fonts/DMSans/DMSans-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../../../assets/fonts/DMSans/DMSans-Medium.ttf") format("truetype"),
+        url("../../../assets/fonts/DMSans/DMSans-Medium.svg#DMSans-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;  
+    font-display: swap;
+}
+
+$ff-primary:"CompassSerif-Regular", sans-serif;
+$ff-secondary:"Manrope-Medium", sans-serif;
+$ff-tertiary:"Manrope-SemiBold", sans-serif;
+$ff-quatery:"Manrope-Bold", sans-serif;
+$ff-regular:"Manrope-Regular", sans-serif;
+$ff-dm-regular:"DMSans-Regular", sans-serif;

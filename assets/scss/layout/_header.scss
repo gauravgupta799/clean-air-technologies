@@ -1,0 +1,93 @@
+@use "../abstract/breakpoints" as *;
+@use "../abstract/colors" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+
+.header{
+    &__logo{
+       img{
+            height: rem(70);
+            @include breakpoint-lg{
+                height: auto;
+            }
+       }
+    }
+    &__btnWrapper{
+        display: flex;
+        align-items: center;
+        gap:rem(12);
+    }
+}
+
+.header-top {
+    // padding-block:em(24);
+    padding-block:em(18); 
+    background-color: $clr-primary;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    @include breakpoint-lg{
+        padding-block:em(18); 
+    }
+    &__container{
+       @include flex-space-between;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        @include breakpoint-lg{
+            gap: 2rem;
+        }
+        @include breakpoint-xxl{
+            gap: 3rem;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:rem(16);
+        width: 100%;
+        li{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            a{
+                display: flex;
+                align-items: center;
+                gap:rem(12);
+                color:$clr-white;
+            }
+        }
+    }
+}
+
+.header-bottom{
+    position: relative;
+    background-color: $clr-white;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    transition:all 0.2s ease;
+    &__container,
+    &__mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: rem(88);
+    }
+    &__mobile-right{
+        display: flex;
+        align-items: center;
+        gap:rem(16);
+    }
+    &.sticky{
+        box-shadow: 0 0px 4px rgb(150 147 147 / 50%);
+        // border-bottom-left-radius:20px;
+        // border-bottom-right-radius:20px;
+    }
+    &.hidden{
+        transform: translateY(-160px);
+    }
+}
+

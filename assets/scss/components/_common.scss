@@ -1,0 +1,73 @@
+@use "../abstract/breakpoints" as *;
+@use "../abstract/colors" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+
+
+
+.sec-h-left{
+    max-width: 48rem;
+}
+
+.section-wrapper{
+    max-width:42rem;
+    margin-inline:auto;
+}
+
+.sec-p{
+    max-width: 38rem;
+}
+
+.section-left-header{
+    max-width: 25rem;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0,0,0,0.75);
+    z-index: 10;
+    &.show{
+        left: 0;
+    }
+}
+
+
+.link{
+    font-size: rem(14);
+    line-height: 1.43;
+    text-decoration: underline;
+    color:$clr-secondary;
+}
+
+.icon-box-wrapper{
+    display: flex;
+    gap:rem(20);
+    @include breakpoint-xl{
+        gap:rem(24)
+    }
+    @include breakpoint-xxl{
+        gap:rem(28)
+    }
+
+    .icon-box{
+        // flex-shrink: 0;
+        @include breakpoint-xxl{
+            flex-shrink: 0;
+        }
+    }
+}
+
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap:rem(14);
+    @include breakpoint-sm{
+        gap:rem(16);
+    }
+}

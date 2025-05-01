@@ -1,0 +1,130 @@
+/* 
+    Project's Name: Clean Air Technologies
+    Version: 1.0
+    Start Date: 28/04/2025
+    Designed By: YourHustler
+    Developer: Gaurav Gupta 
+    Framework: Bootstrap 5
+    Pre-proecessor: SCSS
+    Responsive: Yes(Mobile-First)
+    Tested On: Chrome, Firefox, Safari, Edge
+    Last Changes: 
+    Description: Clean Air Technologies offers expert air duct cleaning and indoor air quality solutions for residential, commercial, and institutional spaces. We help clients breathe cleaner, healthier air through advanced equipment and certified service.
+
+    Update Log: Intial Layout Setup (Gaurav Gupta)
+*/
+
+@use "../abstract/colors" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/functions" as *;
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    min-height: 100%;
+    height: auto;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width:rem(8);
+}
+
+$radius:rem(8);
+
+::-webkit-scrollbar-track {
+    background-color: $clr-white;
+    border-radius:$radius;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-primary; 
+    border-radius:$radius;
+}
+
+::placeholder{
+    font-size: rem(16) !important;
+    font-family:$ff-secondary !important;
+    color:$clr-primary !important;
+}
+
+::selection{
+    color:$clr-white;
+    background-color: $clr-primary;
+}
+
+div, ul, ol, li,
+h1, h2, h3, h4, h5, h6, table, pre,
+form, fieldset, input, textarea, p blockquote, th, td{
+    margin: 0;
+    padding: 0;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p,  h5 + p, h6 + p{
+    margin-top:rem(10);
+}
+
+p + p{
+    margin-top: rem(16);
+}
+
+span + span {
+    margin-top: rem(4);
+}
+
+img{
+    display: block;
+    object-fit:cover;
+}
+
+a{
+    text-decoration: none;
+    color:$clr-primary;
+}
+
+textarea{
+    resize: vertical;
+}
+
+address{
+    font-style: normal;
+    font-size: 100%;
+    display: inline;
+    color:$clr-primary;
+}
+
+input, textarea, select, button{
+    outline:none;
+    border:none;
+}
+
+button{
+    background: transparent;
+    font-family: $ff-secondary;
+}
+
+small{
+    display: flex;
+    font-size: rem(14);
+    line-height: 1.75;
+    margin-top: rem(10);
+}
+
+body{
+    font-weight: normal;
+    font-size: normal;
+    letter-spacing: normal;
+    background-color: $clr-white;
+    font-family: $ff-secondary;
+}
