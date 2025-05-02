@@ -519,11 +519,11 @@ document.querySelectorAll(".form__control").forEach((input) => {
 
 
 //===== ENABLE/DISABLE SUBMIT BUTTON START =======
-// const inputCheckbox = document.getElementById("agree-consent");
-// inputCheckbox && inputCheckbox.addEventListener("change", function() {
-//   const submitBtn = document.getElementById("submit-btn");
-//   this.checked ? submitBtn.classList.remove("disabled") : submitBtn.classList.add("disabled");
-// });
+const inputCheckbox = document.getElementById("agree-consent");
+inputCheckbox && inputCheckbox.addEventListener("change", function() {
+  const submitBtn = document.getElementById("submit-btn");
+  this.checked ? submitBtn.classList.remove("disabled") : submitBtn.classList.add("disabled");
+});
 //===== ENABLE/DISABLE SUBMIT BUTTON END ======
 
 // const readBioBtns = document.querySelectorAll(".read-bio-btn");

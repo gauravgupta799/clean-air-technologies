@@ -75,6 +75,9 @@
         align-items: center;
         justify-content: space-between;
         height: rem(88);
+        @include breakpoint-lg{
+            height: rem(112);
+        }
     }
     &__mobile-right{
         display: flex;

@@ -20,14 +20,13 @@
         outline:none;
         border:none;
         width: 100%;
-        font-family: $ff-v-regular;
         outline:1px solid $clr-gray;
         background: $clr-white;
-        caret-color: $clr-quartery;
-        color:$clr-quartery;
         font-size: rem(16);
         line-height: 2;
         padding:em(12) em(16);
+        @include radius(16px);
+        // border-radius: 
         &::placeholder{
             color:$clr-black;
         }
@@ -37,8 +36,8 @@
         pointer-events: none;
         position: absolute;
         text-transform: capitalize;
-        font-family: $ff-v-regular;
-        color:$clr-quartery;
+        font-family: $ff-secondary;
+        color:$clr-gray;
         top: 50%;
         left:rem(14);
         font-size: rem(14);
@@ -77,53 +76,23 @@
     }
 }
 
-
-// .footer-form-group{
-//     @include flex-center-vertical;
-//     background: $clr-white;
-//     max-width: rem(500);
-//     @include border-radius(24px);
-// }
-
-// .footer-form-control{
-//     line-height: 2.5;
-//     outline:none;
-//     border-radius: 24px 0 0 24px;
-//     border: 2px solid $clr-black;
-//     border-right:none;
-// }
-
-
-// .footer-form-control:focus + label,
-// .footer-form-control:valid + label{
-//     top: rem(10);
-//     padding-top: rem(6);
-//     background: transparent;
-// }
-
-// .footer-form-control{
-//     &:focus{
-//         border-color:$clr-secondary;
+// .custom-select {
+//     position: relative;
+//     &::after{
+//         content: url("../assets/icons/chevron-down.svg");
+//         position: absolute;
+//         top: 16px;
+//         right: 32px;
+//         transition:transform 0.3s ease;
+//         transform:rotate(0deg);
 //     }
+//     &:focus-within{
+//         &::after {
+//             transform:rotate(180deg);
+//         }
+//     }
+
 // }
-
-.custom-select {
-    position: relative;
-    &::after{
-        content: url("../assets/icons/chevron-down.svg");
-        position: absolute;
-        top: 16px;
-        right: 32px;
-        transition:transform 0.3s ease;
-        transform:rotate(0deg);
-    }
-    &:focus-within{
-        &::after {
-            transform:rotate(180deg);
-        }
-    }
-
-}
 
 select {
     appearance: none; /* Remove default arrow */
@@ -132,7 +101,7 @@ select {
     width: 100%;
 }
 
-#signup-cta-btn{
+#submit-btn{
     &.disabled{
         opacity: 0.65;
         cursor: not-allowed;
@@ -152,4 +121,38 @@ select {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+.consent-label{
+    display: flex;
+    align-items: center;
+    gap:rem(12);
+    color:$clr-gray;
+    cursor: pointer;
+}
  
+
+.connect{
+    &__title{
+        font-size: rem(20);
+        line-height: 1.5;
+        font-family: $ff-primary;
+        @include breakpoint-lg{
+            font-size: rem(22);
+        }
+        @include breakpoint-xxl{
+            font-size: rem(24);
+        }
+    }
+    &__link{
+        color:$clr-white;
+        line-height: 1.25;
+        font-size: rem(16);
+    }
+}
+
+input[type="checkbox"]{
+    accent-color: $clr-primary;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

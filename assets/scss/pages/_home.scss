@@ -19,7 +19,7 @@ $height: calc(100vh - 150px);
     position: relative;
     overflow: hidden;
     @include bg-cover;
-    height: 76vh;
+    height: 75vh;
     
     .banner-title, 
     .banner-subTitle{
@@ -30,13 +30,19 @@ $height: calc(100vh - 150px);
     }
 }
 
-.banner-content-home{
+.banner-content{
     position: absolute;
     left: 0;
-    bottom:rem(268);
+    bottom:rem(96);
+   
     @include breakpoint-md{
         left: 2rem;
     }
+    
+    &--home{
+        bottom:rem(268);
+    }
+
 }
 
 .banner-bottom-wrapper{
@@ -183,18 +189,6 @@ $height: calc(100vh - 150px);
         color:$clr-white;
 
     }
-    // .counter-text{
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     gap:rem(4);
-    //     font-size: rem(36);
-    //     line-height: 1.1;
-    //     font-family: $ff-primary;
-    //     @include breakpoint-lg{
-    //         font-size: rem(40);
-    //     }
-    // }
 }
 
 .testimonials{
@@ -337,3 +331,7 @@ $height: calc(100vh - 150px);
     0%   { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-50%, 0, 0); }
   }
+
+.blog-img-wrapper{
+    position: relative;
+}

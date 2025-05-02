@@ -758,42 +758,42 @@ button.swiper-pagination-bullet {
 */
 @font-face {
   font-family: "CompassSerif-Regular";
-  src: url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.woff2") format("woff2"), url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.woff") format("woff"), url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.ttf") format("truetype"), url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/CompassSerif/CompassSerif-Regular.svg#CompassSerif-Regular") format("svg");
+  src: url("../assets/fonts/CompassSerif/CompassSerif-Regular.woff2") format("woff2"), url("../assets/fonts/CompassSerif/CompassSerif-Regular.woff") format("woff"), url("../assets/fonts/CompassSerif/CompassSerif-Regular.ttf") format("truetype"), url("../assets/fonts/CompassSerif/CompassSerif-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/CompassSerif/CompassSerif-Regular.svg#CompassSerif-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope-Regular";
-  src: url("../../../assets/fonts/Manrope/Manrope-Regular.woff2") format("woff2"), url("../../../assets/fonts/Manrope/Manrope-Medium.woff") format("woff"), url("../../../assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype"), url("../../../assets/fonts/Manrope/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/Manrope/Manrope-Regular.svg#Manrope-Regular") format("svg");
+  src: url("../assets/fonts/Manrope/Manrope-Regular.woff2") format("woff2"), url("../assets/fonts/Manrope/Manrope-Medium.woff") format("woff"), url("../assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype"), url("../assets/fonts/Manrope/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Manrope/Manrope-Regular.svg#Manrope-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope-Medium";
-  src: url("../../../assets/fonts/Manrope/Manrope-Medium.woff2") format("woff2"), url("../../../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../../../assets/fonts/Manrope/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/Manrope/Manrope-Medium.ttf") format("truetype"), url("../../../assets/fonts/Manrope/Manrope-Medium.svg#Manrope-Medium") format("svg");
+  src: url("../assets/fonts/Manrope/Manrope-Medium.woff2") format("woff2"), url("../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../assets/fonts/Manrope/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Manrope/Manrope-Medium.ttf") format("truetype"), url("../assets/fonts/Manrope/Manrope-Medium.svg#Manrope-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope-SemiBold";
-  src: url("../../../assets/fonts/Manrope/Manrope-SemiBold.woff2") format("woff2"), url("../../../assets/fonts/Manrope/Manrope-SemiBold.woff") format("woff"), url("../../../assets/fonts/Manrope/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/Manrope/Manrope-SemiBold.ttf") format("truetype"), url("../../../assets/fonts/Manrope/Manrope-SemiBold.svg#Manrope-SemiBold") format("svg");
+  src: url("../assets/fonts/Manrope/Manrope-SemiBold.woff2") format("woff2"), url("../assets/fonts/Manrope/Manrope-SemiBold.woff") format("woff"), url("../assets/fonts/Manrope/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Manrope/Manrope-SemiBold.ttf") format("truetype"), url("../assets/fonts/Manrope/Manrope-SemiBold.svg#Manrope-SemiBold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope-Bold";
-  src: url("../../../assets/fonts/Manrope/Manrope-Bold.woff2") format("woff2"), url("../../../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../../../assets/fonts/Manrope/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/Manrope/Manrope-Bold.ttf") format("truetype"), url("../../../assets/fonts/Manrope/Manrope-Bold.svg#Manrope-Bold") format("svg");
+  src: url("../assets/fonts/Manrope/Manrope-Bold.woff2") format("woff2"), url("../assets/fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../assets/fonts/Manrope/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Manrope/Manrope-Bold.ttf") format("truetype"), url("../assets/fonts/Manrope/Manrope-Bold.svg#Manrope-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DMSans-Regular";
-  src: url("../../../assets/fonts/DMSans/DMSans-Medium.woff2") format("woff2"), url("../../../assets/fonts/DMSans/DMSans-Medium.woff") format("woff"), url("../../../assets/fonts/DMSans/DMSans-Medium.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/DMSans/DMSans-Medium.ttf") format("truetype"), url("../../../assets/fonts/DMSans/DMSans-Medium.svg#DMSans-Regular") format("svg");
+  src: url("../assets/fonts/DMSans/DMSans-Medium.woff2") format("woff2"), url("../assets/fonts/DMSans/DMSans-Medium.woff") format("woff"), url("../assets/fonts/DMSans/DMSans-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/DMSans/DMSans-Medium.ttf") format("truetype"), url("../assets/fonts/DMSans/DMSans-Medium.svg#DMSans-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1045,13 +1045,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
 }
 @media screen and (min-width: 36em) {
   h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1062,8 +1062,8 @@ h4 {
 }
 @media screen and (min-width: 62em) {
   h4 {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 75em) {
@@ -1086,37 +1086,37 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
 }
 @media screen and (min-width: 36em) {
   h5 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 @media screen and (min-width: 48em) {
   h5 {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 62em) {
   h5 {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 75em) {
   h5 {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 100em) {
   h5 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
   }
 }
 @media screen and (min-width: 120em) {
@@ -1127,43 +1127,43 @@ h5 {
 }
 
 h6 {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 @media screen and (min-width: 36em) {
   h6 {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 48em) {
   h6 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
   }
 }
 @media screen and (min-width: 62em) {
   h6 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
   }
 }
 @media screen and (min-width: 75em) {
   h6 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
   }
 }
 @media screen and (min-width: 100em) {
   h6 {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 120em) {
   h6 {
     font-size: 1.375rem;
-    line-height: 1.875rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -5324,6 +5324,10 @@ p, ul, ol, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.relative {
+  position: relative;
 }
 
 .mx-auto {
@@ -19374,15 +19378,19 @@ p, ul, ol, body {
   color: #E3B505;
   cursor: pointer;
 }
-.navbar__link.active svg.chevron-icon, .navbar__link:hover svg.chevron-icon {
-  transform: rotate(180deg);
-}
 .navbar__link.active svg.chevron-icon path, .navbar__link:hover svg.chevron-icon path {
   fill: #E3B505;
   stroke: #E3B505;
 }
 .navbar__link.active .svg-icon path, .navbar__link:hover .svg-icon path {
   fill: #E3B505;
+}
+.navbar__link:hover svg.chevron-icon {
+  transform: rotate(180deg);
+}
+.navbar__link:hover svg.chevron-icon path {
+  fill: #E3B505;
+  stroke: #E3B505;
 }
 
 .submenu {
@@ -19455,7 +19463,7 @@ p, ul, ol, body {
   }
 }
 .aside-mobile .logo-wrapper img {
-  height: 2.8125rem;
+  height: 4.375rem;
 }
 @media only screen and (min-width: 62em) {
   .aside-mobile {
@@ -19568,8 +19576,14 @@ p, ul, ol, body {
   color: #FFFFFF;
 }
 .mobile-menu-overlay .mobile-menu__link {
-  font-size: 1.25rem;
-  font-family: "Manrope-Medium", sans-serif;
+  font-size: 1.375rem;
+  line-height: 2;
+  font-family: "CompassSerif-Regular", sans-serif;
+}
+@media only screen and (min-width: 48em) {
+  .mobile-menu-overlay .mobile-menu__link {
+    font-size: 1.5rem;
+  }
 }
 .mobile-menu-overlay.show {
   left: 0;
@@ -19601,6 +19615,17 @@ p, ul, ol, body {
     font-size: 1rem;
   }
 }
+.btn--tabs {
+  font-size: 0.875rem;
+  font-family: "Manrope-Medium", sans-serif;
+  border: 1px solid #707070;
+  color: #5D5D5D;
+}
+.btn--tabs:hover {
+  background-color: #E3B505;
+  color: #FFFFFF;
+  border-color: #E3B505;
+}
 
 .btn--primary {
   background-color: #E3B505;
@@ -19613,7 +19638,7 @@ p, ul, ol, body {
   background-color: #004F92;
 }
 .btn--secondary:hover {
-  background-color: #FFFFFF;
+  background-color: #E3B505;
 }
 
 .btn--outline {
@@ -19638,7 +19663,7 @@ p, ul, ol, body {
 }
 
 .sec-h-left {
-  max-width: 48rem;
+  max-width: 45rem;
 }
 
 .section-wrapper {
@@ -19652,6 +19677,11 @@ p, ul, ol, body {
 
 .section-left-header {
   max-width: 25rem;
+}
+
+.testimonials-container {
+  max-width: 75rem;
+  margin-inline: auto;
 }
 
 .overlay {
@@ -19671,6 +19701,13 @@ p, ul, ol, body {
   font-size: 0.875rem;
   line-height: 1.43;
   text-decoration: underline;
+  color: #E3B505;
+}
+.link:hover {
+  color: #004F92;
+}
+
+.link-hover:hover {
   color: #E3B505;
 }
 
@@ -19705,6 +19742,40 @@ p, ul, ol, body {
   }
 }
 
+.tabs__container {
+  max-width: 60rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+@media only screen and (min-width: 36em) {
+  .tabs__container {
+    gap: 1.5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .tabs__container {
+    gap: 1.75rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .tabs__container {
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .tabs__container {
+    gap: 2.25rem;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .tabs__container {
+    gap: 2.5rem;
+  }
+}
+
 .accordion {
   width: 100%;
   border: none;
@@ -19719,7 +19790,7 @@ p, ul, ol, body {
   gap: 0.75rem;
   padding-block: 1.25em;
   text-transform: initial;
-  color: #FFFFFF;
+  color: #202020;
   transition: all 0.3s ease;
 }
 .accordion-title span {
@@ -19742,6 +19813,9 @@ p, ul, ol, body {
 .accordion-title svg path {
   transition: fill 0.3s ease;
 }
+.accordion-title--primary {
+  color: #FFFFFF;
+}
 .accordion-title:hover {
   color: #E3B505;
   cursor: pointer;
@@ -19757,7 +19831,6 @@ p, ul, ol, body {
   transition: max-height 0.3s ease-in-out;
 }
 .accordion-content p {
-  color: #FFFFFF;
   padding-bottom: 1.75em;
 }
 .accordion-content p + p {
@@ -19775,6 +19848,141 @@ p, ul, ol, body {
 }
 .accordion-title.is-open.accordion-content {
   padding-bottom: 1.25rem;
+}
+
+.form__group-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form__group {
+  position: relative;
+  width: 100%;
+}
+.form__control {
+  position: relative;
+  outline: none;
+  border: none;
+  width: 100%;
+  outline: 1px solid #707070;
+  background: #FFFFFF;
+  font-size: 1rem;
+  line-height: 2;
+  padding: 0.75em 1em;
+  border-radius: 16px;
+}
+.form__control::-moz-placeholder {
+  color: #202020;
+}
+.form__control::placeholder {
+  color: #202020;
+}
+.form__label {
+  display: inline-block;
+  pointer-events: none;
+  position: absolute;
+  text-transform: capitalize;
+  font-family: "Manrope-Medium", sans-serif;
+  color: #707070;
+  top: 50%;
+  left: 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  padding-left: 1em;
+  margin-bottom: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.form__label--textarea {
+  top: 20%;
+}
+
+.form__label.focused {
+  top: 0;
+  font-size: 0.75rem;
+  padding-inline: 0.5rem;
+  background-color: #FFFFFF;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  line-height: 1.25;
+}
+
+.form__control.focused {
+  outline-color: #E3B505;
+}
+.form__control.focused + label {
+  color: #E3B505;
+}
+
+.form__control:focus {
+  outline-color: #E3B505;
+}
+.form__control:focus + label {
+  color: #E3B505;
+}
+
+select {
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  width: 100%;
+}
+
+#submit-btn.disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#submit-btn.enabled {
+  opacity: 1;
+  cursor: pointer;
+  all: revert;
+}
+
+.contact-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.consent-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #707070;
+  cursor: pointer;
+}
+
+.connect__title {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: "CompassSerif-Regular", sans-serif;
+}
+@media only screen and (min-width: 62em) {
+  .connect__title {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .connect__title {
+    font-size: 1.5rem;
+  }
+}
+.connect__link {
+  color: #FFFFFF;
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+input[type=checkbox] {
+  accent-color: #004F92;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .header__logo img {
@@ -19853,6 +20061,11 @@ p, ul, ol, body {
   align-items: center;
   justify-content: space-between;
   height: 5.5rem;
+}
+@media only screen and (min-width: 62em) {
+  .header-bottom__container, .header-bottom__mobile {
+    height: 7rem;
+  }
 }
 .header-bottom__mobile-right {
   display: flex;
@@ -19964,7 +20177,7 @@ a[href="https://yourhustler.com"]:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 76vh;
+  height: 75vh;
 }
 .banner-container .banner-title,
 .banner-container .banner-subTitle {
@@ -19974,15 +20187,18 @@ a[href="https://yourhustler.com"]:hover {
   height: 100vh;
 }
 
-.banner-content-home {
+.banner-content {
   position: absolute;
   left: 0;
-  bottom: 16.75rem;
+  bottom: 6rem;
 }
 @media only screen and (min-width: 48em) {
-  .banner-content-home {
+  .banner-content {
     left: 2rem;
   }
+}
+.banner-content--home {
+  bottom: 16.75rem;
 }
 
 .banner-bottom-wrapper {
@@ -20298,5 +20514,52 @@ a[href="https://yourhustler.com"]:hover {
   100% {
     transform: translate3d(-50%, 0, 0);
   }
+}
+.blog-img-wrapper {
+  position: relative;
+}
+
+.whats-included__title {
+  display: inline-flex;
+  padding: 0.75em 1.375em;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: "Manrope-Medium", sans-serif;
+  border-radius: 24px;
+  color: #535353;
+  border: 1px solid #979797;
+  background-color: #EEF4F9;
+}
+.whats-included__list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.125em;
+}
+@media only screen and (min-width: 62em) {
+  .whats-included__list li {
+    padding-block: 1.25em;
+  }
+}
+.whats-included__list li:not(:last-child) {
+  border-bottom: 1px solid #CFCFCF;
+}
+.whats-included__list li span {
+  font-size: 1.25rem;
+  line-height: 2.33;
+  font-family: "CompassSerif-Regular", sans-serif;
+}
+@media only screen and (min-width: 48em) {
+  .whats-included__list li span {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .whats-included__list li span {
+    font-size: 1.5rem;
+  }
+}
+.whats-included__wrapper {
+  max-width: 35rem;
 }
 /*# sourceMappingURL=.bundle.css.map */

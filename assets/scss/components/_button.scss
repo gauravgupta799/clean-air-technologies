@@ -22,6 +22,18 @@
     @include breakpoint-sm{
         font-size: rem(16);
     }
+
+    &--tabs{
+        font-size: rem(14);
+        font-family: $ff-secondary;
+        border:1px solid #707070;
+        color:#5D5D5D;
+        &:hover{
+            background-color: $clr-secondary;
+            color:$clr-white;
+            border-color:$clr-secondary;
+        }
+    }
 }
 
 .btn--primary{
@@ -36,7 +48,7 @@
     @extend .btn;
     background-color: $clr-primary;
     &:hover{
-        background-color: $clr-white;
+        background-color: $clr-secondary;
     }
 }
 

@@ -7,7 +7,7 @@
 
 
 .sec-h-left{
-    max-width: 48rem;
+    max-width: 45rem;
 }
 
 .section-wrapper{
@@ -21,6 +21,11 @@
 
 .section-left-header{
     max-width: 25rem;
+}
+
+.testimonials-container{
+    max-width: 75rem;
+    margin-inline:auto;
 }
 
 .overlay{
@@ -42,6 +47,15 @@
     line-height: 1.43;
     text-decoration: underline;
     color:$clr-secondary;
+    &:hover{
+        color:$clr-primary;
+    }
+}
+
+.link-hover{
+    &:hover{
+        color:$clr-secondary;
+    }
 }
 
 .icon-box-wrapper{
@@ -69,5 +83,31 @@
     gap:rem(14);
     @include breakpoint-sm{
         gap:rem(16);
+    }
+}
+
+.tabs{
+    &__container{
+        max-width: 60rem;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:rem(20);
+        @include breakpoint-sm{
+            gap:rem(24);
+        }
+        @include breakpoint-md{
+            gap:rem(28);
+        }
+        @include breakpoint-lg{
+            gap:rem(32);
+        }
+        @include breakpoint-xl{
+            gap:rem(36);
+        }
+        @include breakpoint-xxl{
+            gap:rem(40);
+        }
     }
 }

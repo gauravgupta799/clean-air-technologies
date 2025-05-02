@@ -46,7 +46,6 @@
             color:$clr-secondary;
             cursor: pointer;
             svg.chevron-icon{
-                transform: rotate(180deg);
                 path{
                     fill:$clr-secondary;
                     stroke:$clr-secondary;
@@ -55,6 +54,16 @@
             .svg-icon{
                 path{
                     fill:$clr-secondary;
+                }
+            }
+        }
+
+        &:hover{
+            svg.chevron-icon{
+                transform: rotate(180deg);
+                path{
+                    fill:$clr-secondary;
+                    stroke:$clr-secondary;
                 }
             }
         }
@@ -136,7 +145,7 @@
     }
     .logo-wrapper{
         img{
-            height:rem(45);
+            height:rem(70);
         }
     }
     @include breakpoint-lg{
@@ -244,8 +253,12 @@
         color:$clr-white;
     }
     .mobile-menu__link{
-        font-size: rem(20);
-        font-family: $ff-secondary;
+        font-size: rem(22);
+        line-height: 2;
+        font-family: $ff-primary;
+        @include breakpoint-md{
+            font-size: rem(24);
+        }
     }
     &.show{
         // transform: translateX(0);
