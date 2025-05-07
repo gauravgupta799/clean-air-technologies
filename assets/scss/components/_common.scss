@@ -88,26 +88,64 @@
 
 .tabs{
     &__container{
-        max-width: 60rem;
+        // max-width: 60rem;  
+        width: min(100%, rem(960));
         margin-inline: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap:rem(20);
+        flex-wrap: wrap;
+        gap:rem(16);
         @include breakpoint-sm{
-            gap:rem(24);
+            gap:rem(20);
         }
         @include breakpoint-md{
-            gap:rem(28);
+            gap:rem(24);
         }
         @include breakpoint-lg{
-            gap:rem(32);
+            gap:rem(28);
         }
         @include breakpoint-xl{
-            gap:rem(36);
+            gap:rem(32);
         }
         @include breakpoint-xxl{
-            gap:rem(40);
+            gap:rem(36);
         }
     }
+}
+
+.blog-figure{
+    position: relative;
+    display: inline-flex;
+    span{
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap:rem(64);
+    @include breakpoint-md{
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap:rem(32);
+        row-gap:rem(64);
+    }
+    @include breakpoint-lg{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    @include breakpoint-xl{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+.filter-projects{
+    display: none;
+}
+
+.filter-projects.show{
+    display: block;
 }

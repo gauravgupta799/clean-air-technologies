@@ -14,7 +14,7 @@
         font-family: $ff-secondary;;
         @include radius(24px);
         color:#535353;
-        border:1px solid #979797;
+        // border:1px solid #979797;
         background-color: $clr-tertiary;
     }
     &__list{
@@ -26,9 +26,9 @@
             @include breakpoint-lg{
                 padding-block:em(20);
             }
-            &:not(:last-child){
-                border-bottom: 1px solid #CFCFCF;
-            }
+            // &:not(:last-child){
+            //     border-bottom: 1px solid #CFCFCF;
+            // }
 
             span{
                 font-size: rem(20);
@@ -47,3 +47,4 @@
         max-width: 35rem;
     }
 }
+

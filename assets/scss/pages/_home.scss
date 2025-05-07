@@ -40,7 +40,7 @@ $height: calc(100vh - 150px);
     }
     
     &--home{
-        bottom:rem(268);
+        bottom:rem(224);
     }
 
 }
@@ -116,17 +116,16 @@ $height: calc(100vh - 150px);
     &__header{
         figure{
             position: relative;
-        }
-
-        .icon-btn{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            @include breakpoint-xxl{
-                right: 16px;
-            }
+            display: inline-flex;
         }
     }
+}
+
+
+.icon-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .why{
@@ -165,6 +164,7 @@ $height: calc(100vh - 150px);
         }
     }
     &__value{
+        position: relative;
         font-size: rem(44);
         line-height: 1;
         font-family: $ff-primary;
@@ -183,6 +183,20 @@ $height: calc(100vh - 150px);
         }
         @include breakpoint-xxxl{
             font-size: rem(80);
+        }
+        &::after{
+            content:attr(data-suffix);
+            color:$clr-white;
+            font-size: rem(32);
+            @include breakpoint-md{
+                font-size: rem(36);
+            }
+            @include breakpoint-lg{
+                font-size: rem(40);
+            }
+            @include breakpoint-xl{
+                font-size: rem(44);
+            }
         }
     }
     &__subTitle{

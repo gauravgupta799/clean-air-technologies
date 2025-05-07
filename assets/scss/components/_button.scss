@@ -7,16 +7,16 @@
 .btn{
     outline:none;
     border:none;
+    display: inline-flex;
     background-color: transparent;
     padding:em(14) em(24);
     font-size: rem(14);
-    // line-height: 1.5;
     font-family: $ff-dm-regular;
     @include radius(24px);
     color:$clr-white;
     border:1px solid $clr-white;
-    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
-    -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.10));
+    -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.10));
     cursor: pointer;
     @include transition(all, 0.3s, ease);
     @include breakpoint-sm{
@@ -28,6 +28,7 @@
         font-family: $ff-secondary;
         border:1px solid #707070;
         color:#5D5D5D;
+        &.active,
         &:hover{
             background-color: $clr-secondary;
             color:$clr-white;
@@ -80,8 +81,6 @@
 .btn--wrapper{
     display: flex;
     align-items: center;
-    gap:rem(14);
-    @include breakpoint-sm{
-        gap:rem(16);
-    }
+    flex-wrap: wrap;
+    gap:rem(16);
 }

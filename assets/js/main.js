@@ -99,12 +99,12 @@ navLinks.forEach(link =>{
 function bannerContentsAnimation(){
   const tl = gsap.timeline();
   // Header Animation Start
-  tl.from([".header__logo", ".header-btn"], {
+  tl.from([".header-top__list li",".header__logo", ".header-btn"], {
     opacity: 0,
     y: 50,
     delay: 0.6,
     duration: 1,
-    stagger:0.2,
+    stagger:0.1,
     ease: Expo.easeInOut,
   });
   tl.from([".navbar__link", "#hamburger-btn"], {
@@ -136,15 +136,26 @@ function bannerContentsAnimation(){
     stagger:0.1,
     ease: "power4.out",
   });
-  const heroBtns = document.querySelector(".hero-btn");
-  heroBtns && tl.from(heroBtns, {
-    opacity: 0,
-    duration: 1,
-    y: 50,
-    delay: -1.15,
-    stagger:0.1,
-    ease: "power4.out",
-  });
+  
+  const heroBtns = document.querySelectorAll(".banner-btn");
+  heroBtns && heroBtns.forEach((heroBtn)=>{
+    tl.from(heroBtn, {
+      opacity: 0,
+      duration: 1,
+      y: 50,
+      delay: -1.15,
+      stagger:0.1,
+      ease: "power4.out",
+    });
+  })
+
+  tl.from(".banner-bottom-wrapper",{
+    opacity:0,
+    duration:1,
+    delay:-1.25,
+    ease:"power4.in",
+  })
+  
 
   tl.from(".accordion-wrapper",{
     opacity:0,
@@ -154,13 +165,15 @@ function bannerContentsAnimation(){
     stagger:0.1,
     ease:"power4.in"
   })
-  tl.from(".hero__contact-banner",{
+
+  tl.from(".connect__title",{
     opacity:0,
     duration:1,
     delay:-1.85,
     ease:"power4.in"
   })
-  tl.from(".cta-link",{
+
+  tl.from(".connect__link",{
     opacity:0,
     y:30,
     delay:-1.5,
@@ -168,12 +181,20 @@ function bannerContentsAnimation(){
     stagger:0.2,
     ease:"power4.inOut"
   })
+  tl.from(".socials__list li",{
+    opacity:0,
+    y:30,
+    delay:-1.65,
+    duration:1,
+    stagger:0.2,
+    ease:"power4.inOut"
+  })
 
-  const bannerImage = document.querySelectorAll(".animate-hero-image");
+  const bannerImage = document.querySelectorAll(".hero-img");
   bannerImage && tl.from(bannerImage, {
     opacity: 0,
-    y: 30,
-    duration: 1,
+    // y: 30,
+    duration: 1.25,
     delay: -2,
     stagger:0.1,
     ease:"power4.in",
@@ -350,22 +371,6 @@ if(backMenuBtn && mobileMenuOverlay) {
 //====== TOGGLE MOBILE SUBMENU END ==========
 
 
-
-//======= FLOATING INPUT LABLE START ======
-// document.querySelectorAll(".form__control").forEach((input) => {
-//     input.addEventListener("focus", ()=> input.nextElementSibling.classList.add("focused"));
-//     input.addEventListener("blur", ()=> input.nextElementSibling.classList.toggle("focused", input.value !== ""));
-// }); 
-//======= FLOATING INPUT LABLE END ======
-
-//===== ENABLE/DISABLE SUBMIT BUTTON START =======
-// const inputCheckbox = document.getElementById("agree-consent");
-// inputCheckbox && inputCheckbox.addEventListener("change", function() {
-//   const submitBtn = document.getElementById("submit-btn");
-//   this.checked ? submitBtn.classList.remove("disabled") : submitBtn.classList.add("disabled");
-// });
-//===== ENABLE/DISABLE SUBMIT BUTTON END ======
-
 // JavaScript for lazy loading background images start
 let lazyBackgrounds = [].slice.call(document.querySelectorAll("[data-bg]"));
 
@@ -437,39 +442,7 @@ function visible($el) {
     compareBottom <= viewBottom && compareTop >= viewTop && $el.is(":visible")
   );
 }
-// function updateCounter(){
-//   const myCounter = document.querySelector('.counter-value');
-//   if (myCounter && visible($(".counter-value"))){
-//     if ($(".counter-value").hasClass("counter-loaded")) return;
-//     $(".counter-value").addClass("counter-loaded");
-//     $(".counter-value").each(function(){
-//       if ($(this).html() == Math.floor($(this).html())) {
-//         var $this = $(this);
-//         // var targetValue = parseFloat($this.text()); // Convert text to number
-//         var targetValue = parseFloat($(this).data("target")); // Convert text to number
-        
-//         jQuery({ Counter: 0 }).animate(
-//           { Counter: targetValue },
-//           {
-//             duration: 2500,
-//             easing: "swing",
-//             step: function(){
-//               let formatedNumber;
-//               if(Number.isInteger(targetValue)){
-//                 formatedNumber = Math.trunc(this.Counter) + 1;
-//               }
-//               else{
-//                 formatedNumber = ((this.Counter * 10) / 10).toFixed(1);
-//               }
-//               $this.text(formatedNumber.toLocaleString("en-US"));
-//               // $this.text(Math.trunc(this.Counter) + 1);
-//             },
-//           }
-//         );
-//       }
-//     });
-//   }
-// }
+
 
 function updateCounter(){
   ScrollTrigger.create({
@@ -525,40 +498,6 @@ inputCheckbox && inputCheckbox.addEventListener("change", function() {
   this.checked ? submitBtn.classList.remove("disabled") : submitBtn.classList.add("disabled");
 });
 //===== ENABLE/DISABLE SUBMIT BUTTON END ======
-
-// const readBioBtns = document.querySelectorAll(".read-bio-btn");
-// const popupContainers = document.querySelectorAll(".team-bio-popup");
-// const closePopupBtns = document.querySelectorAll(".popup-close-btn");
-
-// function togglePopup(index){
-//   popupContainers[index].classList.toggle("show");
-//   document.querySelector(".overlay").classList.toggle("show");
-//   stopLenisScroll();
-// }
-
-
-// readBioBtns && readBioBtns.forEach((readBtn ,index)=>{
-//   readBtn.addEventListener("click",()=> togglePopup(index));
-//   closePopupBtns && closePopupBtns[index].addEventListener("click",()=> togglePopup(index))
-// });
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const scrollableContent = document.querySelector(".team-member__details");
-
-//   let startY, startScrollTop;
-  
-//   scrollableContent && scrollableContent.addEventListener("touchstart", (e) => {
-//     startY = e.touches[0].pageY;
-//     startScrollTop = scrollableContent.scrollTop;
-//   });
-
-//   scrollableContent && scrollableContent.addEventListener("touchmove", (e) => {
-//     let moveY = e.touches[0].pageY;
-//     let deltaY = startY - moveY;
-//     scrollableContent.scrollTop = startScrollTop + deltaY;
-//   });
-// });
 
 
 const swiperServices = new Swiper(".swiper-services",{
@@ -635,7 +574,6 @@ const swiperTestimonials = new Swiper(".swiper-testimonials",{
 });
 
 
-
 //====== ANIMATION SCRIPT START =========
 const textContainers = gsap.utils.toArray(".fade-up");
 textContainers.forEach((textContainer, i) => {
@@ -660,23 +598,83 @@ fadeIn.forEach((mainContent, i) => {
   const anim = gsap.fromTo(
     mainContent,
     { opacity: 0 },
-    { opacity: 1, duration: 1}
+    { opacity: 1, duration: 1.15}
   );
   ScrollTrigger.create({
     trigger: mainContent,
     animation: anim,
     toggleActions: "play",
     once: true,
-    duration: 1,
+    duration: 1.15,
     ease: "power4.in",
   });
 });
 //====== ANIMATION SCRIPT END =========
 
+const dividers = gsap.utils.toArray(".divider");
+dividers.forEach((divider, i)=>{
+  const anim = gsap.fromTo(divider,
+    { opacity:0, width:"0%", transformOrigin:"left"},
+    { opacity:1, width:"100%", duration:1.5, ease:"power4.inOut"}
+  )
+  ScrollTrigger.create({
+    trigger: divider,
+    animation: anim,
+    toggleActions: "play",
+    once: true,
+    duration: 1.5,
+    // delay:-0.1,
+    stagger:0.1,
+    ease: "power4.inOut",
+  });
+})
+
+//====== Filter Portfolio Start ============
+const tabBtns = document.querySelectorAll(".btn--tabs");
+if(tabBtns.length){
+  tabBtns.forEach((filterBtn) => {
+    filterBtn.addEventListener("click", (e)=> filterCards(e.currentTarget.value));
+  });
+}
+  
+//==== FILTER PORTFOLIO START ========
+function filterCards(category){
+  const cards = document.querySelectorAll('.filter-projects');
+  cards.forEach((card) => {
+    let cardCategories = card.dataset.category.split(' ');
+    const isVisible = category === "all" || cardCategories.includes(category)
+    card.classList.toggle("show", isVisible);
+    gsap.fromTo(card,
+      {
+        opacity:0
+      },
+      {
+        duration:0.9,
+        opacity:1,
+        duration:0.85,
+        stagger:0.1,
+        // opacity:isVisible ? 1 : 0,
+        // scale:isVisible ? 1 : 0.95,
+        ease:"power3.out",
+      }
+    );
+  });
+  updateButtonState(category);
+}
+  
+//----- Update Button State -----
+function updateButtonState(category){
+  tabBtns.forEach((tabBtn) => {
+    const isActive = tabBtn.getAttribute("value") === category;
+    tabBtn.classList.toggle("active", isActive);
+  });
+}
+//====== FILTER PORTFOLIO END =============
 
 window.addEventListener("load",()=>{
   hideLoader();
   bannerContentsAnimation();
+  tabBtns.length && filterCards('all');
 });
 
 // Lenis scroll event

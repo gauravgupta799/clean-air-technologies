@@ -5328,6 +5328,7 @@ p, ul, ol, body {
 
 .relative {
   position: relative;
+  display: inline-flex;
 }
 
 .mx-auto {
@@ -5405,21 +5406,21 @@ p, ul, ol, body {
 .divider {
   position: relative;
   height: 1px;
-  width: 100%;
+  width: 0%;
   background: #202020;
 }
 .divider--white {
   background: #FFFFFF;
 }
 .divider--gray {
-  background: #707070;
+  background: #979797;
 }
 
 .flex {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 .flex--gap1 {
   gap: 1rem;
@@ -19371,8 +19372,8 @@ p, ul, ol, body {
   transform-origin: center;
 }
 .navbar__link svg.chevron-icon path {
-  fill: #004F92;
-  stroke: #004F92;
+  fill: #202020;
+  stroke: #202020;
 }
 .navbar__link.active, .navbar__link:hover {
   color: #E3B505;
@@ -19399,10 +19400,10 @@ p, ul, ol, body {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  background-color: #EEF4F9;
+  background-color: #FFFFFF;
   padding: clamp(1.25em, 3vw, 2em);
   border-radius: 6px;
-  border: 1px solid #707070;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
   width: calc(20rem - 24px);
   transform: translateY(10px);
   height: 0px;
@@ -19418,7 +19419,7 @@ p, ul, ol, body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: "Manrope-Medium", sans-serif;
-  color: #004F92;
+  color: #202020;
   transition: all 0.25s ease;
 }
 .submenu__link:hover {
@@ -19598,6 +19599,7 @@ p, ul, ol, body {
 .btn, .btn--outline, .btn--secondary, .btn--primary {
   outline: none;
   border: none;
+  display: inline-flex;
   background-color: transparent;
   padding: 0.875em 1.5em;
   font-size: 0.875rem;
@@ -19605,8 +19607,8 @@ p, ul, ol, body {
   border-radius: 24px;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
-  -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -19621,7 +19623,7 @@ p, ul, ol, body {
   border: 1px solid #707070;
   color: #5D5D5D;
 }
-.btn--tabs:hover {
+.btn--tabs.active, .btn--tabs:hover {
   background-color: #E3B505;
   color: #FFFFFF;
   border-color: #E3B505;
@@ -19654,12 +19656,8 @@ p, ul, ol, body {
 .btn--wrapper {
   display: flex;
   align-items: center;
-  gap: 0.875rem;
-}
-@media only screen and (min-width: 36em) {
-  .btn--wrapper {
-    gap: 1rem;
-  }
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .sec-h-left {
@@ -19743,37 +19741,78 @@ p, ul, ol, body {
 }
 
 .tabs__container {
-  max-width: 60rem;
+  width: min(100%, 60rem);
   margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 @media only screen and (min-width: 36em) {
   .tabs__container {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 }
 @media only screen and (min-width: 48em) {
   .tabs__container {
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
 }
 @media only screen and (min-width: 62em) {
   .tabs__container {
-    gap: 2rem;
+    gap: 1.75rem;
   }
 }
 @media only screen and (min-width: 75em) {
   .tabs__container {
-    gap: 2.25rem;
+    gap: 2rem;
   }
 }
 @media only screen and (min-width: 100em) {
   .tabs__container {
-    gap: 2.5rem;
+    gap: 2.25rem;
   }
+}
+
+.blog-figure {
+  position: relative;
+  display: inline-flex;
+}
+.blog-figure span {
+  position: absolute;
+  right: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 4rem;
+}
+@media only screen and (min-width: 48em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    row-gap: 4rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 75em) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.filter-projects {
+  display: none;
+}
+
+.filter-projects.show {
+  display: block;
 }
 
 .accordion {
@@ -19864,7 +19903,7 @@ p, ul, ol, body {
   outline: none;
   border: none;
   width: 100%;
-  outline: 1px solid #707070;
+  outline: 1px solid #979797;
   background: #FFFFFF;
   font-size: 1rem;
   line-height: 2;
@@ -19883,7 +19922,7 @@ p, ul, ol, body {
   position: absolute;
   text-transform: capitalize;
   font-family: "Manrope-Medium", sans-serif;
-  color: #707070;
+  color: #979797;
   top: 50%;
   left: 0.875rem;
   font-size: 0.875rem;
@@ -19953,7 +19992,7 @@ select {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #707070;
+  color: #979797;
   cursor: pointer;
 }
 
@@ -20198,7 +20237,7 @@ a[href="https://yourhustler.com"]:hover {
   }
 }
 .banner-content--home {
-  bottom: 16.75rem;
+  bottom: 14rem;
 }
 
 .banner-bottom-wrapper {
@@ -20278,16 +20317,13 @@ a[href="https://yourhustler.com"]:hover {
 
 .cards__header figure {
   position: relative;
+  display: inline-flex;
 }
-.cards__header .icon-btn {
+
+.icon-btn {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-@media only screen and (min-width: 100em) {
-  .cards__header .icon-btn {
-    right: 16px;
-  }
 }
 
 .why__card {
@@ -20337,6 +20373,7 @@ a[href="https://yourhustler.com"]:hover {
   }
 }
 .counter__value {
+  position: relative;
   font-size: 2.75rem;
   line-height: 1;
   font-family: "CompassSerif-Regular", sans-serif;
@@ -20365,6 +20402,26 @@ a[href="https://yourhustler.com"]:hover {
 @media only screen and (min-width: 120em) {
   .counter__value {
     font-size: 5rem;
+  }
+}
+.counter__value::after {
+  content: attr(data-suffix);
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 48em) {
+  .counter__value::after {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .counter__value::after {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .counter__value::after {
+    font-size: 2.75rem;
   }
 }
 .counter__subTitle {
@@ -20527,7 +20584,6 @@ a[href="https://yourhustler.com"]:hover {
   font-family: "Manrope-Medium", sans-serif;
   border-radius: 24px;
   color: #535353;
-  border: 1px solid #979797;
   background-color: #EEF4F9;
 }
 .whats-included__list li {
@@ -20540,9 +20596,6 @@ a[href="https://yourhustler.com"]:hover {
   .whats-included__list li {
     padding-block: 1.25em;
   }
-}
-.whats-included__list li:not(:last-child) {
-  border-bottom: 1px solid #CFCFCF;
 }
 .whats-included__list li span {
   font-size: 1.25rem;

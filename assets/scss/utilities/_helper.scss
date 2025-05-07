@@ -57,6 +57,7 @@
 
 .relative{
     position: relative;
+    display: inline-flex;
 }
 
 .mx-auto{
@@ -135,7 +136,7 @@
 .divider{
     position: relative;
     height: 1px;
-    width: 100%;
+    width: 0%;
     background:$clr-black;
 
     &--white{
@@ -149,7 +150,7 @@
 .flex{
     @include flex-center(vertical);
     flex-wrap: wrap;
-    gap:rem(16);
+    gap:rem(12);
 
     &--gap1{
         gap:rem(16);

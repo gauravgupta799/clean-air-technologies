@@ -37,8 +37,8 @@
             transform: rotate(0);
             transform-origin: center;
             path{
-                fill:$clr-primary;
-                stroke:$clr-primary;
+                fill:$clr-black;
+                stroke:$clr-black;
             }
         }
         &.active,
@@ -77,10 +77,11 @@
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    background-color:$clr-tertiary;
+    background-color:$clr-white;
     padding: clamp(1.25em, 3vw , 2em);
     @include radius(6px);
-    border:1px solid $clr-gray;
+    // border:1px solid $clr-gray;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
     width: calc(20rem - 24px);
     transform: translateY(10px);
     height: 0px;
@@ -97,7 +98,7 @@
         font-size: rem(16);
         line-height: 1.5;
         font-family: $ff-secondary;
-        color:$clr-primary;
+        color:$clr-black;
         @include transition(all, 0.25s, ease);
         &:hover{
             color:$clr-secondary;
